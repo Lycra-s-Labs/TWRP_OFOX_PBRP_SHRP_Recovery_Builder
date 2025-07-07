@@ -14,23 +14,23 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree'
         required: true
-        default: 'https://github.com/<username>/<repo_name>'
+        default: 'https://github.com/Lycra-s-Labs/android_device_sony_akari-ofox'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch (use master if default)'
         required: true
-        default: 'your_branch_name'
+        default: 'fox_12.1'
       DEVICE_NAME:
         description: 'Specify your Device Codename' # As is, just like your PRODUCT_DEVICE in your device tree.
         required: true
-        default: '7304X'
+        default: 'akari'
       DEVICE_PATH:
         description: 'Specify your Device Path (Check the DEVICE_PATH in BoardConfig.mk)' # As is, just like your DEVICE_PATH in your BoardConfig.mk
         required: true
-        default: 'device/device`s_company/Codename'
+        default: 'device/sony/akari'
       BUILD_TARGET:
         description: 'Specify your Build Target' # The image suffix will be added later in build step.
         required: true
-        default: 'recovery'
+        default: 'boot'
         type: choice
         options:
         - boot
